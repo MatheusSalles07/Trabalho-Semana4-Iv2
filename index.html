@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="main-container">
+        <h1>Cadastre suas Informações</h1>
+        <form id="register">
+            <div class="half-box">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" class="inputs">
+            </div>
+            <div class="half-box">
+                <label for="name">Nome Completo</label>
+                <input type="text" name="name" id="name" placeholder="Digite seu Nome Completo" class="inputs">
+            </div>
+            <div class="half-box">
+                <label for="phone">Celular</label>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Digite seu Celular" class="inputs">
+            </div>
+            <div class="half-box">
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" id="cep" placeholder="CEP" class="inputs">
+            </div>
+            <div class="half-box">
+                <label for="street">Endereço</label>
+                <input type="text" name="street" id="street" placeholder="Nome da Rua " class="inputs">
+            </div>
+            <div class="half-box">
+                <label for="number">Número da Casa</label>
+                <input type="number" name="number" id="number" placeholder="Número da Casa" class="inputs">
+            </div>
+            <div class="half-box">
+                <label for="complement">Complemento</label>
+                <input type="text" name="complement" id="complement" placeholder="Complemento" class="inputs">
+            </div>
+            <div class="half-box">
+                <label for="city">Cidade</label>
+                <input type="text" name="city" id="city" placeholder="Cidade" class="inputs">
+            </div>
+            <div class="half-box">
+                <label for="district">Bairro</label>
+                <input type="text" name="district" id="district" placeholder="Bairro" class="inputs">
+            </div>
+            <div class="half-box">
+                <label for="state">Estado</label>
+                <input type="text" name="state" id="state" placeholder="Estado" class="inputs">
+            </div>
+            
+            <!-- <div class="half-box">
+                <label for="register">Data de Cadastro</label>
+                <input type="date" name="date" id="date" placeholder="Data de Cadastro" class="inputs">
+            </div> -->
+            <div class="fullbox">
+                
+                    <input type="checkbox" name="agreement" id="agreement" >
+                
+                   <label for="agreement" id="agreement-label">Eu li e aceito os<a href="#"> termos de uso</a></label>
+  
+            </div>
+            
+                <input type="submit" id="btn-submit" value="Registrar">
+            
+        </form>
+        
+    </div>
+
+     <div>
+            <p class="error-validation template"></p> 
+        </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
