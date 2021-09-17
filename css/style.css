@@ -104,17 +104,11 @@ input[type=number] {
 
 #agreement, #agreement-label {
     display: inline-block;
-    width: auto;   
+    margin: 3px;   
 }
 
 .error-validation {
     color: red;
-    position: absolute;
-    top: 50px;
     font-size: .8rem;
+    margin-bottom: 1rem;
 }
-
-.template {
-    display: none;
-}
-

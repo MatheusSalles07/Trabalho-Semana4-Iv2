@@ -13,43 +13,63 @@
         <form id="register">
             <div class="half-box">
                 <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" class="inputs">
+                <input type="email" name="email" id="email" required placeholder="Digite seu e-mail" class="inputs">
+                <div class="error-validation" id="errorEmail"></div> 
+
             </div>
             <div class="half-box">
                 <label for="name">Nome Completo</label>
-                <input type="text" name="name" id="name" placeholder="Digite seu Nome Completo" class="inputs">
+                <input type="text" name="name" id="name" required placeholder="Digite seu Nome Completo" class="inputs">
+                <p class="error-validation" id="errorName"></p> 
+
             </div>
             <div class="half-box">
                 <label for="phone">Celular</label>
-                <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Digite seu Celular" class="inputs">
+                <input type="number" name="phone" id="phone" required placeholder="Digite seu Celular" maxlength="11" class="inputs">
+                <p class="error-validation" id="errorPhone"></p> 
+
             </div>
             <div class="half-box">
                 <label for="cep">CEP</label>
-                <input type="text" name="cep" id="cep" placeholder="CEP" class="inputs">
+                <input type="text" name="cep" id="cep" required placeholder="CEP" maxlength="8" class="inputs">
+                <p class="error-validation" id="errorCEP"></p> 
+
             </div>
             <div class="half-box">
                 <label for="street">Endereço</label>
-                <input type="text" name="street" id="street" placeholder="Nome da Rua " class="inputs">
+                <input type="text" name="street" id="street" required placeholder="Nome da Rua " class="inputs">
+                <p class="error-validation" id="errorStreet"></p> 
+
             </div>
             <div class="half-box">
                 <label for="number">Número da Casa</label>
-                <input type="number" name="number" id="number" placeholder="Número da Casa" class="inputs">
+                <input type="number" name="number" id="number" required placeholder="Número da Casa" class="inputs">
+                <p class="error-validation" id="errorNumber"></p> 
+
             </div>
             <div class="half-box">
                 <label for="complement">Complemento</label>
                 <input type="text" name="complement" id="complement" placeholder="Complemento" class="inputs">
+                <p class="error-validation" id="errorComplement"></p> 
+
             </div>
             <div class="half-box">
                 <label for="city">Cidade</label>
-                <input type="text" name="city" id="city" placeholder="Cidade" class="inputs">
+                <input type="text" name="city" id="city" required placeholder="Cidade" class="inputs">
+                <p class="error-validation" id="errorCity"></p> 
+
             </div>
             <div class="half-box">
                 <label for="district">Bairro</label>
-                <input type="text" name="district" id="district" placeholder="Bairro" class="inputs">
+                <input type="text" name="district" id="district" required placeholder="Bairro" class="inputs">
+                <p class="error-validation" id="errorDistrict"></p> 
+
             </div>
             <div class="half-box">
                 <label for="state">Estado</label>
-                <input type="text" name="state" id="state" placeholder="Estado" class="inputs">
+                <input type="text" name="state" id="state" required placeholder="Estado" class="inputs">
+                <p class="error-validation" id="errorState"></p> 
+
             </div>
             
             <!-- <div class="half-box">
@@ -71,7 +91,6 @@
     </div>
 
      <div>
-            <p class="error-validation template"></p> 
         </div>
     <script src="js/script.js"></script>
 </body>
