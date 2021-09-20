@@ -10,6 +10,7 @@ const city = document.querySelector('#city');
 const district = document.querySelector('#district');
 const state = document.querySelector('#state');
 const btn = document.querySelector('#btn-submit');
+const checkbox = document.querySelector('#agreement');
 
 const errEmail = document.querySelector("#errorEmail")
 const errName = document.querySelector("#errorName")
@@ -23,10 +24,16 @@ const errState = document.querySelector("#errorState")
 
 const arr = [{}]
 
+
+
 //BOTÃO => ENVIAR O FORM
 btn.addEventListener('click', function (e) {
     e.preventDefault()
-
+    if(checkbox !== null){
+        console.log("Verificado")
+      }else{
+        console.log("Não verificado")
+      }
 
     if (email.value === "" && nome.value === "" && phone.value === "" && cep.value === "" && street.value === "" && number.value === "" && city.value === "" && district.value === "" && state.value === "") {
         errEmail.innerHTML = "Preencher o campo Email"
@@ -47,6 +54,7 @@ btn.addEventListener('click', function (e) {
         district.style.border = "2px solid red"
         errState.innerHTML = "Preencher o campo Estado"
         state.style.border = "2px solid red"
+        
         return
     } else if (email.value === "" || nome.value === "" || phone.value === "" || cep.value === "" || street.value === "" || number.value === "" || city.value === "" || district.value === "" || state.value === "") {
 
@@ -142,6 +150,7 @@ btn.addEventListener('click', function (e) {
         city.value = ""
         district.value = ""
         state.value = ""
+
 
     }
 
